@@ -1,6 +1,5 @@
 package ru.gb.webUITest;
 
-import homework6.AppsPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -8,10 +7,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import ru.gb.webUITesting.LoginPage;
 
 import java.io.FileInputStream;
@@ -23,7 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static ru.gb.webUITesting.LoginPage.*;
 import static ru.gb.webUITesting.MyPostsPage.getAssertElementBlogTitle;
 
-public class testStandWebUITest {
+public class testStandAuthorizationWebUITest {
     static Properties prop = new Properties();
     private static String loginUrl;
     private static String myPostsUrl;
@@ -62,7 +58,7 @@ public class testStandWebUITest {
     void loginTest() {
         loginPage.login(userName, password);
         Assertions.assertAll(
-                () -> assertThat(driver.getCurrentUrl()).contains(myPostsUrl),
+                () -> assertThat(driver.getCurrentUrl()).isEqualTo(myPostsUrl),
                 () -> assertThat(driver.findElement(By.xpath(getAssertElementBlogTitle())).isDisplayed()).isTrue());
     }
     @DisplayName("Проверка входа в аккаунт с невалидным паролем")
@@ -70,7 +66,7 @@ public class testStandWebUITest {
     void loginWithInvalidPasswordTest() {
         loginPage.login(userName, "123456789");
         Assertions.assertAll(
-                () -> assertThat(driver.getCurrentUrl()).contains(loginUrl),
+                () -> assertThat(driver.getCurrentUrl()).isEqualTo(loginUrl),
                 () -> assertThat(driver.findElement(By.xpath(getAssertErrorNumber())).isDisplayed()).isTrue(),
                 () -> assertThat(driver.findElement(By.xpath(getAssertErrorNumber())).getText()).isEqualTo("401"),
                 () -> assertThat(driver.findElement(By.xpath(getAssertErrorText())).isDisplayed()).isTrue(),
@@ -81,7 +77,7 @@ public class testStandWebUITest {
     void loginWithBigUserNameTest() {
         loginPage.login(bigUserName, bigUserNamePassword);
         Assertions.assertAll(
-                () -> assertThat(driver.getCurrentUrl()).contains(myPostsUrl),
+                () -> assertThat(driver.getCurrentUrl()).isEqualTo(myPostsUrl),
                 () -> assertThat(driver.findElement(By.xpath(getAssertElementBlogTitle())).isDisplayed()).isTrue());
     }
 
@@ -100,12 +96,12 @@ public class testStandWebUITest {
         String currentUrl = driver.getCurrentUrl();
         if (shouldPass) {
             Assertions.assertAll(
-                    () -> assertThat(driver.getCurrentUrl()).contains(myPostsUrl),
+                    () -> assertThat(driver.getCurrentUrl()).isEqualTo(myPostsUrl),
                     () -> assertThat(driver.findElement(By.xpath(getAssertElementBlogTitle())).isDisplayed()).isTrue());
         } else {
             Assertions.assertAll(
-                    () -> assertThat(currentUrl).doesNotContain(myPostsUrl),
-                    () -> assertThat(currentUrl).contains(loginUrl));
+                    () -> assertThat(currentUrl).isNotEqualTo(myPostsUrl),
+                    () -> assertThat(currentUrl).isEqualTo(loginUrl));
         }
     }
     @AfterEach

@@ -4,11 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f3fed2-7f0a-4c01-8e77-09b081d2bef8" name="Changes" comment="" />
+    <list default="true" id="f6f3fed2-7f0a-4c01-8e77-09b081d2bef8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework6/AppsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework6/BaseView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework6/CollectionPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework6/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework6/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework6/MyAccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework6/UnsplashMainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework6/ViewMoreLinksMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/webUITesting/AbstractPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/webUITesting/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/webUITesting/MyPostsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/webUITesting/PostPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/homework5/UnsplashWebUITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/homework6/UnsplashWebUIPageUObjectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/gb/webUITest/myPostsWebUITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/gb/webUITest/testStandAuthorizationWebUITest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2KPT4DKyrv5jzbzmxVBZfOboD7Y" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -18,10 +56,119 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/GIGABYTE-PC/IdeaProjects/FinalWebUiAutotestProject",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15429688",
+    "project.structure.side.proportion": "0.5421965"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.gb.webUITesting" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\GIGABYTE-PC\IdeaProjects\FinalWebUiAutotestProject\src\main\java\homework6" />
+      <recent name="C:\Users\GIGABYTE-PC\IdeaProjects\FinalWebUiAutotestProject\src\main\java" />
+      <recent name="C:\Users\GIGABYTE-PC\IdeaProjects\FinalWebUiAutotestProject\src\main\java\ru\gb" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="homework5" />
+      <recent name="homework6" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ru.gb.webUITest in FinalWebUiAutotestProject">
+    <configuration name="myPostsWebUITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalWebUiAutotestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.webUITest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.gb.webUITest" />
+      <option name="MAIN_CLASS_NAME" value="ru.gb.webUITest.myPostsWebUITest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="myPostsWebUITest.checkUserPostsDisplayedWhenUserHasAtLeastOnePost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalWebUiAutotestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.webUITest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.gb.webUITest" />
+      <option name="MAIN_CLASS_NAME" value="ru.gb.webUITest.myPostsWebUITest" />
+      <option name="METHOD_NAME" value="checkUserPostsDisplayedWhenUserHasAtLeastOnePost(int,boolean)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ru.gb.webUITest in FinalWebUiAutotestProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalWebUiAutotestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.webUITest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.gb.webUITest" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testStandAuthorizationWebUITest.loginWithBigUserNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalWebUiAutotestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.webUITest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.gb.webUITest" />
+      <option name="MAIN_CLASS_NAME" value="ru.gb.webUITest.testStandAuthorizationWebUITest" />
+      <option name="METHOD_NAME" value="loginWithBigUserNameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ru.gb.webUITest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FinalWebUiAutotestProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.webUITest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.gb.webUITest" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ru.gb.webUITest in FinalWebUiAutotestProject" />
+        <item itemvalue="JUnit.myPostsWebUITest.checkUserPostsDisplayedWhenUserHasAtLeastOnePost" />
+        <item itemvalue="TestNG.ru.gb.webUITest" />
+        <item itemvalue="JUnit.myPostsWebUITest" />
+        <item itemvalue="JUnit.testStandAuthorizationWebUITest.loginWithBigUserNameTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,5 +179,23 @@
       <updated>1673875026890</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((RemoteWebElement)posts.get(8)).parent" custom="org.openqa.selenium.remote.RemoteWebElement" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
