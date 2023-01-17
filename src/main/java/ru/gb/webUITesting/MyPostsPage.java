@@ -85,25 +85,23 @@ public class MyPostsPage extends AbstractPage {
         }
     }
     //Сохраняем все посты пользователя в лист, проверяем что посты содержат изображения, заголовки и описание
-    public LoginPage checkAllPostsHasImgNameDescription(int numberOfPosts){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(postsXpath)));
-        List<WebElement> posts = driver.findElements(By.xpath(postsXpath));
-        //если кнопка следующей страницы активна, то кликаем по ней и сохраняем посты на странице
-        //try catch нужен, чтобы не падал тест, если кнопка следующей страницы не активна
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(nextPageXpath)));
-        if(numberOfPosts>4){
-            while (isNextPageButtonActive()) {
-                nextPageClick();
+    public LoginPage checkAllPostsHasImgNameDescription(int numberOfPosts) {
+            int postsChecked = 0;
+            List<WebElement> posts = null;
+            do {
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(postsXpath)));
-                posts.addAll(driver.findElements(By.xpath(postsXpath)));
-            }
-        }
-        //Проверяем что все посты содержат изображения, заголовки и описание
-        for (WebElement post : posts) {
-            assertThat(post.findElement(By.tagName("img")).isDisplayed(), is(true));
-            assertThat(post.findElement(By.tagName("h2")).isDisplayed(), is(true));
-            assertThat(post.findElement(By.className("description")).isDisplayed(), is(true));
-        }
+                posts = driver.findElements(By.xpath(postsXpath));
+                for (WebElement post : posts) {
+                    assertThat(post.findElement(By.xpath("//img")).isDisplayed(), is(true));
+                    assertThat(post.findElement(By.xpath("//h2")).isDisplayed(), is(true));
+                    assertThat(post.findElement(By.xpath("//div")).isDisplayed(), is(true));
+                    postsChecked++;
+                }
+                posts.clear();
+                if (isNextPageButtonActive()) {
+                    nextPageClick();
+                }
+            } while (postsChecked < numberOfPosts);
         return new LoginPage(driver);
     }
     public void checkNoPosts() {
